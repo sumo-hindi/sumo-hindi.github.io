@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  href: string;
+}
+const { title, href } = Astro.props;
+---
+<a class="lesson-card" href={href}>{title}</a>
+
+<style>
+  .lesson-card {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
